@@ -8,7 +8,7 @@ class FlowSummator {
     fun sumValues(input: Int): Flow<Int> = flow {
         val flows = Array(input) { index ->
             flow {
-                delay((index + 1) * 100L)
+                delay( 100L)
                 emit(index + 1)
             }
         }
